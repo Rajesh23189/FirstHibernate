@@ -11,50 +11,42 @@ import jakarta.persistence.Table;
 public class Employee {
 
     @Id
-    @Column(name="SID")
-    private Integer sid;
+    @Column(name="id")
+    private Integer id;
 
-    @Column(name = "SNAME")
-    private String sName;
+    @Column(name = "name")
+    private String name;
 
-    @Column(name = "SCITY")
-    private String sCity;
+    @Column(name = "city")
+    private String city;
 
      public Employee()
      {
          System.out.println("Zero Param Constructor For Hibernate");
      }
-    public Integer getSid() {
-        return sid;
+
+    public Integer getId() {
+        return id;
     }
 
-    public void setSid(Integer sid) {
-        this.sid = sid;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getsName() {
-        return sName;
+    public String getName() {
+        return name;
     }
 
-    public void setsName(String sName) {
-        this.sName = sName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getsCity() {
-        return sCity;
+    public String getCity() {
+        return city;
     }
 
-    public void setsCity(String sCity) {
-        this.sCity = sCity;
-    }
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "sid=" + sid +
-                ", sName='" + sName + '\'' +
-                ", sCity='" + sCity + '\'' +
-                '}';
+    public void setCity(String city) {
+        this.city = city;
     }
 
 }

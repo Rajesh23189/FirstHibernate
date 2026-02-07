@@ -28,9 +28,9 @@ public class LaunchFirstApp {
 
 
         Employee employee = new Employee();
-        employee.setSid(1);
-        employee.setsName("Rajesh");
-        employee.setsCity("Barasat");
+        employee.setId(1);
+        employee.setName("Rajesh");
+        employee.setCity("Barasat");
 
         //Step 6 Perform Operation
          session.save(employee);
